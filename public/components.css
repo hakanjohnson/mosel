@@ -6,7 +6,11 @@ input {
   font-size: 1rem;
 }
 
-input:
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #eb3939;
+}
 
 textarea {
   background-color: #000000;
@@ -19,10 +23,15 @@ textarea {
 }
 
 #submit {
-  background-color: #ea3535;
+  background: linear-gradient(45deg, #eb3939, #c23131);
   color: #ffffff;
   border: none;
   padding: 1rem;
   font-size: 1.2rem;
   cursor: pointer;
+  margin: 2rem 0 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
 }
