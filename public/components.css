@@ -4,6 +4,7 @@ input {
   padding: 1rem;
   color: #ffffff;
   font-size: 1rem;
+  border-radius: 2px;
 }
 
 input:focus,
@@ -15,6 +16,7 @@ textarea:focus {
 textarea {
   background-color: #000000;
   border: 2px solid #757575;
+  border-radius: 2px;
   padding: 1rem;
   color: #ffffff;
   font-family:
@@ -23,7 +25,8 @@ textarea {
 }
 
 #submit {
-  background: linear-gradient(45deg, #eb3939, #c23131);
+  background: linear-gradient(45deg, #f13c3c, #9a2222);
+  border-radius: 2px;
   color: #ffffff;
   border: none;
   padding: 1rem;
