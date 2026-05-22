@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Motorradtechnik Mosel</title>
+    <link rel="stylesheet" href="/public/core.css" />
+    <link rel="stylesheet" href="/public/components.css" />
   </head>
 
   <body>
@@ -11,23 +13,35 @@
     <main>
       <section>
         <div class="info-text">
-          <h3>Starte dein Projekt</h3>
+          <h3>Starte dein</h3>
+          <span class="info-text-color">Projekt</span>
           <p>
-            Erzähl uns von deinem Motorrad un deinen Wünschen - wir erstellen
+            Erzähl uns von deinem Motorrad und deinen Wünschen - wir erstellen
             dir ein Individuelles Angebot.
           </p>
         </div>
         <form id="kontakt" action="">
-          <label>Vorname*</label>
+          <p>Deine Kontaktdaten</p>
+          <label>Vorname </label>
           <input type="text" />
-          <label>Nachname*</label>
+          <label>Nachname </label>
           <input type="text" />
-          <label for="">Telefon</label>
+          <label for="">Telefon </label>
           <input type="tel" placeholder="+49 123 456789" />
-          <label for="">E-Mail*</label>
+          <label for="">E-Mail </label>
           <input type="email" placeholder="deine@email.de" />
-          <textarea placeholder="Deine Nachricht" cols="45" rows="8"></textarea>
-          <button>Anfrage Senden</button>
+          <label for="textbox">Weitere Infos / Wünsche </label>
+          <textarea
+            id="textbox"
+            placeholder="Deine Nachricht"
+            cols="45"
+            rows="8"></textarea>
+          <button id="submit" type="submit">
+            <img
+              src="../public/img/send_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg"
+              alt=""
+              width="24px" />Anfrage Senden
+          </button>
         </form>
       </section>
     </main>

@@ -1,0 +1,28 @@
+input {
+  background-color: #000000;
+  border: 2px solid #757575;
+  padding: 1rem;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+input:
+
+textarea {
+  background-color: #000000;
+  border: 2px solid #757575;
+  padding: 1rem;
+  color: #ffffff;
+  font-family:
+    Montserrat, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#submit {
+  background-color: #ea3535;
+  color: #ffffff;
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}

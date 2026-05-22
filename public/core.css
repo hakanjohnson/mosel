@@ -1,0 +1,83 @@
+:root {
+  font-family:
+    Montserrat, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../public/fonts/Montserrat-VariableFont_wght.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+body {
+  width: 100%;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.info-text h3,
+.info-text-color {
+  text-transform: uppercase;
+  display: inline;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.info-text-color {
+  color: #eb3939;
+}
+
+.info-text p {
+  font-size: 1.2rem;
+  text-align: center;
+  width: 90%;
+  color: #d6d6d6;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form label {
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+form label::after {
+  content: "*";
+  color: #eb3939;
+}
