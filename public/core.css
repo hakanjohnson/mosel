@@ -2,7 +2,7 @@
   font-family:
     Montserrat, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: #000000;
+  background-color: #090909;
   color: #ffffff;
 }
 
@@ -28,6 +28,7 @@ body {
 main {
   width: 90%;
   margin: 0 auto;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -55,7 +56,10 @@ section {
 }
 
 .info-text-color {
-  color: #eb3939;
+  font-weight: bold;
+  background: linear-gradient(45deg, #e11919, #9a2222);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .info-text p {
@@ -80,4 +84,17 @@ form label {
 form label::after {
   content: "*";
   color: #eb3939;
+}
+
+.info-banner {
+  background: linear-gradient(45deg, #e11919, #e11919);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  margin-bottom: 2rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
