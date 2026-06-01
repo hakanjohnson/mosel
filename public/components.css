@@ -180,11 +180,52 @@ li > a {
 footer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: nowrap;
   align-items: center;
   padding: 20px;
   gap: 16px;
   background-color: #090909;
   border-top: 1px solid #6c473a33;
   border-top-width: 80%;
+}
+
+.h-colored {
+  font-weight: bold;
+  background: linear-gradient(45deg, #e11919, #9a2222);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.btn-xl {
+  border-radius: 2px;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 250px;
+  margin-top: 1.2rem;
+}
+
+.btn-red {
+  background: linear-gradient(90deg, #e61313, #940606);
+}
+
+.btn-noclr {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.hero-text {
+  max-width: 600px;
 }
