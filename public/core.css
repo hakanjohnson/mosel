@@ -13,11 +13,14 @@
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -25,7 +28,7 @@ body {
 }
 
 main {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   padding-top: 100px;
   display: flex;
@@ -36,6 +39,8 @@ section {
   display: flex;
   flex-direction: column;
   width: 100%;
+  text-align: left;
+  padding: 20px;
 }
 
 .info-text h3,
@@ -49,8 +54,9 @@ section {
 .info-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
   width: 100%;
 }
 
@@ -63,7 +69,7 @@ section {
 
 .info-text p {
   font-size: 1.2rem;
-  text-align: center;
+  text-align: left;
   width: 90%;
 }
 
@@ -95,4 +101,12 @@ form label::after {
   margin-bottom: 2rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.capslock {
+  text-transform: uppercase;
+}
+
+.bg-light {
+  background-color: #0c0c0c;
 }
