@@ -54,10 +54,8 @@ navigation {
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding-left: 15px;
+  filter: drop-shadow(1rem 1rem 1rem #000000);
+  padding-top: 40px;
 }
 
 .navbar {
@@ -66,6 +64,11 @@ navigation {
   align-items: center;
   position: relative;
   padding: 10px 20px;
+}
+
+.place {
+  min-width: 80px;
+  height: 60px;
 }
 
 #menu {
@@ -235,4 +238,8 @@ h1 {
 
 .hero-text {
   max-width: 600px;
+}
+
+.prefix {
+  text-align: center;
 }
