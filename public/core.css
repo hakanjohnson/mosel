@@ -56,7 +56,14 @@ section {
   flex-direction: column;
   width: 100%;
   max-width: 400px;
-  margin: 0 auto;
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .info-text {
+    margin-left: 0;
+    max-width: 800px;
+  }
 }
 
 .info-text-color {
@@ -69,7 +76,7 @@ section {
 .info-text p {
   font-size: 1.2rem;
   text-align: left;
-  width: 90%;
+  width: 100%;
 }
 
 form {

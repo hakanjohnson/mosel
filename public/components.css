@@ -56,6 +56,7 @@ navigation {
 .logo {
   filter: drop-shadow(1rem 1rem 1rem #000000);
   padding-top: 40px;
+  z-index: 100;
 }
 
 .navbar {
@@ -168,7 +169,7 @@ a {
 }
 
 li:hover {
-  background-color: #df1a1aef;
+  background-color: #d8d8d82b;
 }
 
 li {
