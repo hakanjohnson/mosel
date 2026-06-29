@@ -116,3 +116,10 @@ form label::after {
 .bg-light {
   background-color: #0c0c0c;
 }
+
+button.btn-xl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
