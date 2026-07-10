@@ -59,7 +59,7 @@ navigation {
   filter: none;
   width: 100px;
   padding-top: 10px;
-  padding-left: 40px;
+  padding-left: 20px;
   z-index: 100;
 }
 
@@ -173,7 +173,7 @@ a {
 }
 
 li:hover {
-  background-color: #937d7d;
+  background-color: #181818;
 }
 
 li {
@@ -277,9 +277,44 @@ h1 {
   background-color: #58121215;
   border: solid 1px #ff38382b;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  text-align: center;
-  font-size: 0.4rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  margin: 16px 0;
+}
+
+.box {
+  height: 600px;
+  max-width: 400px;
+  background-color: #2e2c2c15;
+  border: solid 1px #ff38382b;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.smaller,
+.bigger {
+  margin: 0 auto;
+  padding: 2px;
+}
+
+.bigger {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.smaller {
+  color: #757575;
+  text-transform: capitalize;
 }
 
 .icon > img {
@@ -287,8 +322,8 @@ h1 {
 }
 .icon-wrapper {
   display: flex;
-  justify-content: left;
-  gap: 18px;
+  justify-content: center;
+  gap: 20px;
 }
 
 .hero-wrapper {
@@ -330,7 +365,7 @@ h1 {
   .logo {
     filter: none;
     padding-top: 10px;
-    padding-left: 40px;
+    padding-left: 20px;
     z-index: 100;
   }
   #menupc {
