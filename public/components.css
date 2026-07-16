@@ -105,7 +105,7 @@ navigation {
   transition: rotate 2.4s ease;
 }
 
-ul {
+nav > ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -286,7 +286,8 @@ h1 {
 }
 
 .box {
-  height: 600px;
+  height: min-content;
+  width: 100%;
   max-width: 400px;
   background-color: #2e2c2c15;
   border: solid 1px #ff38382b;
@@ -294,10 +295,10 @@ h1 {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   font-size: 0.8rem;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 2rem 2rem;
+  margin-bottom: 4rem;
 }
 
 .smaller,

@@ -7,3 +7,24 @@
 .red {
   color: #e61313;
 }
+
+.p3 {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.box > li {
+  text-decoration: #e61313;
+  margin: 1rem 0;
+}
+
+.box > ul {
+  margin: 1rem;
+  padding: 0;
+}
+
+ul li::marker,
+ol li::marker {
+  color: #e61313;
+}
