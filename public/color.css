@@ -5,7 +5,7 @@
   text-align: center;
 }
 .red {
-  color: #e61313;
+  color: #ce0000;
 }
 
 .p3 {
@@ -15,7 +15,7 @@
 }
 
 .box > li {
-  text-decoration: #e61313;
+  text-decoration: #ce0000;
   margin: 1rem 0;
 }
 
@@ -24,7 +24,7 @@
   padding: 0;
 }
 
-ul li::marker,
-ol li::marker {
-  color: #e61313;
+.box > ul li::marker,
+.box > ol li::marker {
+  color: #ce0000;
 }
