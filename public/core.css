@@ -80,6 +80,17 @@ section {
   .info-text {
     max-width: 800px;
   }
+
+  h1 {
+    font-size: 5rem;
+  }
+  .info-teaser {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
 .info-text-color {
@@ -104,6 +115,10 @@ form {
 
 form label {
   margin: 1.5rem 0 0.5rem 0;
+}
+
+.bike {
+  position: relative;
 }
 
 form label::after {
