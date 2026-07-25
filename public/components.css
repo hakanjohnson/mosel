@@ -295,6 +295,15 @@ h1 {
   margin: 16px 0;
 }
 
+.box-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .box {
   height: min-content;
   width: 100%;
@@ -305,6 +314,23 @@ h1 {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  font-size: 0.8rem;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  margin-bottom: 4rem;
+}
+
+.box-red {
+  height: min-content;
+  width: 100%;
+  max-width: 400px;
+  background-color: #2e2c2c15;
+  border: solid 2px #e01313;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 0.8rem;
   margin: 0 auto;
   padding: 2rem 2rem;
@@ -411,5 +437,15 @@ h1 {
   .navbar {
     display: none;
     width: 0;
+  }
+  h1 {
+    font-size: 3.3rem;
+    margin: 0;
+    padding: 0;
+  }
+  .info-img {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
   }
 }
