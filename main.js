@@ -15,9 +15,23 @@ const subbtn = document.getElementById("menu3");
 const sub = document.getElementById("submenu");
 
 subbtn.addEventListener("click", function () {
-  if (submenu.classList.contains("active")) {
-    submenu.classList.remove("active");
+  if (sub.classList.contains("active")) {
+    sub.classList.remove("active");
   } else {
-    submenu.classList.add("active");
+    sub.classList.add("active");
+  }
+});
+
+// Menü schließen bei Klick außerhalb
+document.addEventListener("click", function (event) {
+  const klickImMenue = menu.contains(event.target);
+  const klickAufButton = button.contains(event.target);
+
+  if (!klickImMenue && !klickAufButton) {
+    menu.classList.remove("open");
+    button.classList.remove("active");
+
+    // Untermenü ebenfalls schließen
+    sub.classList.remove("active");
   }
 });
