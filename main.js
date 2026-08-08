@@ -35,3 +35,17 @@ document.addEventListener("click", function (event) {
     sub.classList.remove("active");
   }
 });
+
+const revealElements = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-visible");
+    }
+  });
+});
+
+revealElements.forEach((element) => {
+  observer.observe(element);
+});
