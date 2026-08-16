@@ -3,7 +3,7 @@ input {
   border: 2px solid #757575;
   padding: 1rem;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: var(--font-base);
   border-radius: 2px;
 }
 
@@ -22,7 +22,7 @@ textarea {
   font-family:
     Montserrat, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 16px;
+  font-size: var(--font-base);
 }
 
 #submit {
@@ -31,7 +31,7 @@ textarea {
   color: #ffffff;
   border: none;
   padding: 1rem;
-  font-size: 1.2rem;
+  font-size: var(--font-large);
   text-transform: uppercase;
   cursor: pointer;
   margin: 2rem 0 2rem 0;
@@ -150,7 +150,7 @@ nav > ul {
 #menu > ul > li {
   padding: 10px;
   color: white;
-  font-size: 16px;
+  font-size: var(--font-base);
   text-decoration: none;
   list-style: none;
   border-width: 80%;
@@ -213,7 +213,7 @@ footer {
 }
 
 h1 {
-  font-size: 2.3rem;
+  font-size: var(--heading-1);
   margin: 0;
   padding: 0;
 }
@@ -236,7 +236,7 @@ h1 {
   color: #ffffff;
   border: none;
   padding: 1rem 2rem;
-  font-size: 1.1rem;
+  font-size: var(--font-base);
   cursor: pointer;
   width: 250px;
   margin-top: 1.2rem;
@@ -246,7 +246,7 @@ h1 {
   border-radius: 2px;
   color: #ffffff;
   border: none;
-  font-size: 1rem;
+  font-size: var(--font-base);
   cursor: pointer;
   width: 180px;
   padding: 8px 8px;
@@ -277,7 +277,7 @@ h1 {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.8rem;
+  font-size: var(--font-base);
   margin-bottom: 0.5rem;
 }
 
@@ -291,7 +291,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: var(--font-small);
   margin: 16px 0;
 }
 
@@ -305,7 +305,7 @@ h1 {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  font-size: 0.8rem;
+  font-size: var(--font-small);
   margin: 0 auto;
   padding: 2rem 2rem;
   margin-bottom: 4rem;
@@ -322,7 +322,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: var(--font-small);
   margin: 0 auto;
   padding: 2rem 2rem;
   margin-bottom: 4rem;
@@ -350,7 +350,7 @@ h1 {
 }
 
 .bigger {
-  font-size: 1.2rem;
+  font-size: var(--font-large);
   font-weight: bold;
   margin-top: 10px;
 }
@@ -393,6 +393,17 @@ h1 {
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 1rem;
+}
+
+.marken>img {
+  width: 220px;
+  height: 200px;
+  padding: 10px;
+  object-fit: contain;
+  filter: grayscale(10%);
+  transition: filter 0.3s ease;
+  background-color: #ffffff;
+  border-radius: 8px;
 }
 
 @media (min-width: 900px) {
@@ -454,7 +465,7 @@ h1 {
     width: 0;
   }
   h1 {
-    font-size: 3.3rem;
+    font-size: var(--heading-1);
     margin: 0;
     padding: 0;
   }
