@@ -9,7 +9,7 @@
   --font-base: 1rem;
   --font-small: 0.8rem;
   --font-large: 1.2rem;
-  --font-base-small: clamp(0.8rem, 2vw, 1rem);
+  --font-base-small: clamp(0.6rem, 2vw, 1rem);
 
   --heading-1: clamp(2rem, 5vw, 5rem);
   --heading-2: clamp(1.7rem, 4vw, 3rem);

@@ -33,9 +33,9 @@ textarea {
   z-index: 10000;
   margin-bottom: 30px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 16px;
   align-items: center;
   font-size: var(--font-base-small);
   height: 30px;
