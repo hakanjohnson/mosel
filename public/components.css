@@ -37,7 +37,7 @@ textarea {
   align-items: center;
   padding: 0 20px;
   align-items: center;
-  font-size: 9px;
+  font-size: var(--font-small);
   height: 30px;
 }
 
