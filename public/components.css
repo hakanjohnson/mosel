@@ -25,6 +25,40 @@ textarea {
   font-size: var(--font-base);
 }
 
+.zusatz {
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 400px;
+  flex-direction: column;
+  border-left: 6px solid #9a2222;
+  background-color: #121212;
+  text-align: left;
+  gap: 16px;
+}
+
+.zusatz h3 {
+  display: flex;
+  gap: 8px;
+  font-size: var(--font-base);
+  margin-left: 1.3rem;
+  justify-content: left;
+  align-items: center;
+}
+
+.text-grey {
+  font-size: var(--font-base);
+  color: #a8a8a8;
+}
+
+.info-teaser {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding: 0 auto;
+  width: 100%;
+}
+
 .top-bar {
   background-color: #000000;
   color: #ffffff;
@@ -395,6 +429,10 @@ h1 {
   text-transform: capitalize;
 }
 
+.marken img {
+  width: 20px;
+}
+
 .icon > img {
   width: 40px;
 }
@@ -442,6 +480,42 @@ h1 {
 }
 
 @media (min-width: 900px) {
+
+
+.zusatz {
+  padding: 1rem 0;
+  display: flex;
+  max-width: 400px;
+  flex-direction: column;
+  border-left: 6px solid #9a2222;
+  background-color: #121212;
+  text-align: left;
+  gap: 16px;
+}
+
+.zusatz h3 {
+  display: flex;
+  gap: 8px;
+  font-size: var(--font-base);
+  margin-left: 1.3rem;
+  justify-content: left;
+  align-items: center;
+}
+
+.text-grey {
+  font-size: var(--font-base);
+  color: #a8a8a8;
+}
+
+.info-teaser {
+  display: flex;
+  gap: 16px;
+  margin-top: 2rem;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
+
   .hero-text {
     max-width: 100%;
   }
