@@ -513,6 +513,7 @@ h1 {
   flex-direction: row;
   justify-content: space-evenly;
   margin-bottom: 2rem;
+  max-width: 800px;
 }
 
 .middle {
