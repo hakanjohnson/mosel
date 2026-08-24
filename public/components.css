@@ -331,6 +331,7 @@ h1 {
 
 .hero-text {
   max-width: 600px;
+  
 }
 
 .prefix {
@@ -455,7 +456,8 @@ h1 {
   object-fit: cover;
   z-index: -1;
   pointer-events: none;
-  opacity: 0.1;
+  opacity: 0.2;
+  filter:blur(1px);
 }
 
 .marken {
@@ -523,9 +525,6 @@ h1 {
   padding-top: 2rem;
 }
 
-.top {
-  
-}
   .hero-text {
     max-width: 100%;
   }
