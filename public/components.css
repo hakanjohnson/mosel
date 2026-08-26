@@ -508,6 +508,17 @@ h1 {
   color: #a8a8a8;
 }
 
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+}
+
 .info-teaser {
   display: flex;
   gap: 16px;
