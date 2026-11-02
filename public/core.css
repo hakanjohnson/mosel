@@ -11,9 +11,9 @@
   --font-large: 1.2rem;
   --font-base-small: clamp(0.6rem, 2vw, 1rem);
 
-  --heading-1: clamp(2rem, 5vw, 5rem);
-  --heading-2: clamp(1.7rem, 4vw, 3rem);
-  --heading-3: clamp(1.5rem, 3vw, 2rem);
+  --heading-1: clamp(2rem, 5vw, 4.5rem);
+  --heading-2: clamp(1.7rem, 4vw, 2.5rem);
+  --heading-3: clamp(1.2rem, 2vw, 1.5rem);
 }
 
 @font-face {
@@ -66,7 +66,7 @@ section {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 600px;
+  max-width: 80%;
   margin: 2rem auto;
   text-align: center;
 }
@@ -99,6 +99,18 @@ section {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form label {
+  margin: 1.5rem 0 0.5rem 0;
 }
 
 @media (min-width: 768px) {
@@ -140,14 +152,6 @@ section {
 .info-text p {
   font-size: var(--font-base);
   width: 100%;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
 }
 
 form label {
