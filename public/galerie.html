@@ -15,7 +15,7 @@
     <header>
       <navigation>
         <div class="logo">
-          <a href="index.html"
+          <a href="../index.html"
             ><img
               src="../public/img/img-logo-transp.png"
               alt="logo"
@@ -24,7 +24,7 @@
         </div>
         <div id="menupc" class="menupc">
           <ul>
-            <li id="menu1pc"><a href="index.html">Home</a></li>
+            <li id="menu1pc"><a href="../index.html">Home</a></li>
             <li id="menu2pc">
               <a href="../public/leistungen.html">Leistungen</a>
             </li>
@@ -41,7 +41,7 @@
         </div>
         <nav id="menu" class="menu">
           <ul>
-            <li id="menu1"><a href="index.html">Home</a></li>
+            <li id="menu1"><a href="../index.html">Home</a></li>
             <li id="menu2"><a href="../public/galerie.html">Galerie</a></li>
             <li id="menu3">
               <a href="../public/leistungen.html">Leistungen</a>
@@ -52,49 +52,186 @@
       </navigation>
     </header>
     <main>
-      <div class="lightbox" id="lightbox"></div>
+      <section class="fg-gallery" aria-labelledby="fg-gallery-title">
+        <div class="fg-gallery__header">
+          <div>
+            <span class="fg-gallery__eyebrow">Einblicke in unsere Arbeit</span>
+            <h2 class="fg-gallery__title" id="fg-gallery-title">
+              Unsere Galerie
+            </h2>
+          </div>
 
-      <section id="gallerie" class="gallerie">
-        <h2>Sortiment und Kundenfelgen</h2>
-        <div class="gall g_drei">
-          <div class="img_wrapper" onclick="">
-            <img
-              src="../public/img/Felgen/IMG_20260608_084244 Robin Mosel.jpg"
-              onclick=""
-              alt="Felgen" />
-          </div>
-          <div class="img_wrapper" onclick="">
-            <img
-              src="../public/img/Felgen/IMG_20260623_111105 Robin Mosel.jpg"
-              onclick=""
-              alt="Felgen" />
-          </div>
-          <div class="img_wrapper" onclick="">
-            <img
-              src="../public/img/Felgen/IMG_20260623_113357 Robin Mosel.jpg"
-              onclick=""
-              alt="Felgen" />
-          </div>
-          <div class="img_wrapper" onclick="">
-            <img
-              src="../public/img/Felgen/IMG_20260812_101440 Robin Mosel.jpg"
-              onclick=""
-              alt="Felgen" />
-          </div>
-          <div class="img_wrapper" onclick="">
-            <img
-              src="../public/img/Felgen/IMG_20260918_143132 Robin Mosel.jpg"
-              onclick=""
-              alt="Felgen" />
-          </div>
-          <div class="img_wrapper" onclick="">
-            <img
-              src="../public/img/Felgen/IMG_20261020_143234 Robin Mosel.jpg"
-              onclick=""
-              alt="Felgen" />
-          </div>
+          <p class="fg-gallery__intro">
+            Felgen, Motorräder und individuelle Details – ausgewählte Arbeiten
+            im Überblick.
+          </p>
         </div>
+
+        <nav class="fg-gallery__filters" aria-label="Galerie-Kategorien">
+          <button
+            class="fg-gallery__filter is-active"
+            type="button"
+            data-filter="all"
+            aria-pressed="true">
+            Alle
+          </button>
+
+          <button
+            class="fg-gallery__filter"
+            type="button"
+            data-filter="felgen"
+            aria-pressed="false">
+            Felgen
+          </button>
+
+          <button
+            class="fg-gallery__filter"
+            type="button"
+            data-filter="motorrad"
+            aria-pressed="false">
+            Motorräder
+          </button>
+
+          <button
+            class="fg-gallery__filter"
+            type="button"
+            data-filter="auspuff"
+            aria-pressed="false">
+            Auspuffanlagen
+          </button>
+        </nav>
+
+        <div class="fg-gallery__grid">
+          <button
+            class="fg-gallery__item"
+            type="button"
+            data-category="felgen"
+            data-full="img/Felgen/IMG_20260608_084244 Robin Mosel.jpg"
+            data-caption="Felgen">
+            <img
+              src="img/Felgen/IMG_20260608_084244 Robin Mosel.jpg"
+              alt="Aufbereitete Felge"
+              loading="lazy" />
+
+            <span class="fg-gallery__item-caption">Felgen</span>
+          </button>
+
+          <button
+            class="fg-gallery__item"
+            type="button"
+            data-category="felgen"
+            data-full="img/Felgen/IMG_20260623_111105 Robin Mosel.jpg"
+            data-caption="Felgen">
+            <img
+              src="img/Felgen/IMG_20260623_111105 Robin Mosel.jpg"
+              alt="Felgenaufbereitung"
+              loading="lazy" />
+
+            <span class="fg-gallery__item-caption">Felgen</span>
+          </button>
+
+          <button
+            class="fg-gallery__item"
+            type="button"
+            data-category="motorrad"
+            data-full="img/Felgen/IMG_20260623_113357 Robin Mosel.jpg"
+            data-caption="Motorrad – Arbeit 01">
+            <img
+              src="img/Felgen/IMG_20260623_113357 Robin Mosel.jpg"
+              alt="Motorradumbau"
+              loading="lazy" />
+
+            <span class="fg-gallery__item-caption">Motorräder</span>
+          </button>
+
+          <button
+            class="fg-gallery__item"
+            type="button"
+            data-category="felgen"
+            data-full="img/Felgen/IMG_20260812_101440 Robin Mosel.jpg"
+            data-caption="Felgen">
+            <img
+              src="img/Felgen/IMG_20260812_101440 Robin Mosel.jpg"
+              alt="Felgenaufbereitung"
+              loading="lazy" />
+
+            <span class="fg-gallery__item-caption">Felgen</span>
+          </button>
+
+          <button
+            class="fg-gallery__item"
+            type="button"
+            data-category="auspuff"
+            data-full="img/Felgen/IMG_20260918_143132 Robin Mosel.jpg"
+            data-caption="Felgen">
+            <img
+              src="img/Felgen/IMG_20260918_143132 Robin Mosel.jpg"
+              alt="Auspuffanlage"
+              loading="lazy" />
+
+            <span class="fg-gallery__item-caption">Auspuffanlagen</span>
+          </button>
+
+          <button
+            class="fg-gallery__item"
+            type="button"
+            data-category="felgen"
+            data-full="img/Felgen/IMG_20261020_143234 Robin Mosel.jpg"
+            data-caption="Felgen">
+            <img
+              src="img/Felgen/IMG_20261020_143234 Robin Mosel.jpg"
+              alt="Felgenaufbereitung"
+              loading="lazy" />
+
+            <span class="fg-gallery__item-caption">Felgen</span>
+          </button>
+        </div>
+
+        <p class="fg-gallery__empty" hidden>
+          In dieser Kategorie sind aktuell keine Bilder vorhanden.
+        </p>
       </section>
+
+      <div class="fg-lightbox" id="fg-lightbox" aria-hidden="true">
+        <div class="fg-lightbox__backdrop" data-lightbox-close></div>
+
+        <div
+          class="fg-lightbox__dialog"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Bildansicht">
+          <button
+            class="fg-lightbox__close"
+            type="button"
+            aria-label="Bildansicht schließen"
+            data-lightbox-close>
+            &times;
+          </button>
+
+          <button
+            class="fg-lightbox__nav fg-lightbox__nav--prev"
+            type="button"
+            aria-label="Vorheriges Bild">
+            &#10094;
+          </button>
+
+          <figure class="fg-lightbox__figure">
+            <img class="fg-lightbox__image" src="" alt="" />
+            <figcaption class="fg-lightbox__caption"></figcaption>
+          </figure>
+
+          <button
+            class="fg-lightbox__nav fg-lightbox__nav--next"
+            type="button"
+            aria-label="Nächstes Bild">
+            &#10095;
+          </button>
+
+          <p class="fg-lightbox__counter" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <script src="../public/galerie.js" defer></script>
     </main>
     <footer>
       <div class="copy">&#169; 2026 Motorradtechnik Mosel.</div>
