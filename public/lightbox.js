@@ -1,14 +1,48 @@
-;(() => {
+document.addEventListener("DOMContentLoaded", () => {
+  const categories = {
+    felgen: {
+      folder: "felgen",
+      prefix: "felge",
+      count: 54,
+      title: "Felgen",
+    },
+
+    motorrad: {
+      folder: "motorrad",
+      prefix: "motorrad",
+      count: 10,
+      title: "Motorrad",
+    },
+
+    auspuff: {
+      folder: "auspuff",
+      prefix: "auspuff",
+      count: 10,
+      title: "Auspuffanlage",
+    },
+  }
+
+  const images = Object.entries(categories).flatMap(([category, settings]) => {
+    return Array.from({ length: settings.count }, (_, index) => {
+      const number = String(index + 1).padStart(2, "0")
+
+      return {
+        src: `img/galerie/${settings.folder}/${settings.prefix}-${number}.jpg`,
+        category,
+        title: `${settings.title} ${number}`,
+        alt: `${settings.title} ${number}`,
+      }
+    })
+  })
+
   const gallery = document.querySelector(".fg-gallery")
   const lightbox = document.querySelector("#fg-lightbox")
 
-  // Abbrechen, wenn die Galerie auf dieser Seite nicht existiert.
   if (!gallery || !lightbox) return
 
-  // DOM-Elemente auswählen
-  const filterButtons = [...gallery.querySelectorAll(".fg-gallery__filter")]
+  const grid = gallery.querySelector("#fg-gallery-grid")
 
-  const grid = gallery.querySelector(".fg-gallery__grid")
+  const filterButtons = [...gallery.querySelectorAll(".fg-gallery__filter")]
 
   const emptyMessage = gallery.querySelector(".fg-gallery__empty")
 
@@ -28,12 +62,40 @@
   let currentIndex = 0
   let lastFocusedElement = null
 
-  function getAllItems() {
-    return [...grid.querySelectorAll(".fg-gallery__item")]
+  function renderGallery() {
+    grid.innerHTML = ""
+
+    images.forEach((image, index) => {
+      const button = document.createElement("button")
+
+      button.className = "fg-gallery__item"
+      button.type = "button"
+      button.dataset.category = image.category
+      button.dataset.index = index
+      button.setAttribute("aria-label", `${image.title} vergrößern`)
+
+      const img = document.createElement("img")
+
+      img.src = image.src
+      img.alt = image.alt
+      img.loading = "lazy"
+      img.decoding = "async"
+
+      const caption = document.createElement("span")
+
+      caption.className = "fg-gallery__item-caption"
+      caption.textContent = image.title
+
+      button.append(img, caption)
+
+      grid.appendChild(button)
+    })
+
+    applyFilter("all")
   }
 
   function applyFilter(filter) {
-    const items = getAllItems()
+    const items = [...grid.querySelectorAll(".fg-gallery__item")]
 
     items.forEach((item) => {
       const category = item.dataset.category
@@ -61,21 +123,20 @@
 
     const item = visibleItems[currentIndex]
 
-    const thumbnail = item.querySelector("img")
+    const imageIndex = Number(item.dataset.index)
 
-    const fullImage = item.dataset.full || thumbnail.src
+    const image = images[imageIndex]
 
-    imageElement.src = fullImage
+    imageElement.src = image.src
+    imageElement.alt = image.alt
 
-    imageElement.alt = thumbnail.alt || ""
-
-    captionElement.textContent = item.dataset.caption || thumbnail.alt || ""
+    captionElement.textContent = image.title
 
     counterElement.textContent = `${currentIndex + 1} / ${visibleItems.length}`
   }
 
   function openLightbox(item) {
-    visibleItems = getAllItems().filter((entry) => !entry.hidden)
+    visibleItems = [...grid.querySelectorAll(".fg-gallery__item:not([hidden])")]
 
     currentIndex = visibleItems.indexOf(item)
 
@@ -104,6 +165,7 @@
     document.body.classList.remove("fg-lightbox-open")
 
     imageElement.src = ""
+    imageElement.alt = ""
 
     if (lastFocusedElement) {
       lastFocusedElement.focus()
@@ -152,5 +214,5 @@
     }
   })
 
-  applyFilter("all")
-})()
+  renderGallery()
+})
