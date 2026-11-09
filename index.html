@@ -48,7 +48,7 @@
     </header>
     <main>
       <section class="hero-wrapper">
-        <video
+        <!--<video
           class="hero-video"
           autoplay
           muted
@@ -56,12 +56,12 @@
           playsinline
           webkit-playsinline>
           <source src="public/img/10839346-uhd_4096_2160_30fps.mp4" />
-        </video>
-       <!-- <img
+        </video>-->
+       <img
           class="hero-video"
           src="public/img/Image.png"
           alt=""
-          width="100%" />-->
+          width="100%" />
         <div class="wrapper-header-box">
         <div class="hero-text">
           <h1 class="capslock">
@@ -94,16 +94,27 @@
           <p>
             Wir verwandeln deine Sport-Enduro in eine straßentaugliche
             Supermoto. Komplett mit allen technischen Anpassungen und
-            behördlichen Eintragungen.
+            Eintragungen.
           </p>
           <p class="grey">
             Als Beta-Partner bieten wir auch komplette Neufahrzeuge an - direkt
             ab Werk oder nach deinen Individuellen Wünschen umgebaut.
           </p>
-          <img
+          <div class="imgbox-wraper">
+            <div class="imgbox">
+            <img
             class="bike"
-            src="public/img/9163F0E6-1F25-4E66-99D7-F2E08E2074EE.png"
+            src="public/img/galerie/motorrad.jpg"
             alt="" />
+            </div>
+            <div class="imgbox">
+              <img
+            class="bike"
+            src="public/img/galerie/motorrad/motorrad2.jpg"
+            alt="" />
+            </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="reveal>
@@ -179,7 +190,7 @@
             src="public/img/brands-SM-Pro.png"
             alt=""
 />
-  <img
+  <img class="betaimg"
           
             src="public/img/Betamotor_Motorcycles_18_RGB.png"
             alt=""
@@ -224,19 +235,57 @@
         </div>
 
         <div class="gr-reviews__rating">
-            <strong id="gr-average">–</strong>
+            <strong id="gr-average">4.9</strong>
             <span class="gr-reviews__stars">★★★★★</span>
             <small id="gr-count">Google-Bewertungen</small>
         </div>
     </div>
 
     <div class="gr-reviews__grid" id="gr-reviews-grid">
-        <p class="gr-reviews__loading">Bewertungen werden geladen ...</p>
+        <article class="gr-review-card">
+            <div class="gr-review-card__top">
+                <strong class="gr-darker">Vanessa</strong>
+                <span class="gr-review-card__stars">★★★★★</span>
+            </div>
+            <span class="gr-review-card__date">Vor 3 Tagen</span>
+            <p class="gr-darker">Unfassbar unkompliziert, sehr freundlich und super schnell - absolut empfehlenswert! Ich war hier für Inspektion, Reifenwechsel und TÜV 🤗...</p>
+            <span class="gr-review-card__source">Google Rezension</span>
+        </article>
+
+        <article class="gr-review-card">
+            <div class="gr-review-card__top">
+                <strong class="gr-darker">Florian</strong>
+                <span class="gr-review-card__stars">★★★★★</span>
+            </div>
+            <span class="gr-review-card__date">Vor 2 Wochen</span>
+            <p class="gr-darker">Sehr nettes Personal, alles klappt hervorragend, und ich bin glücklich mit einer neuen Beta...</p>
+            <span class="gr-review-card__source">Google Rezension</span>
+        </article>
+
+        <article class="gr-review-card">
+            <div class="gr-review-card__top">
+                <strong class="gr-darker">Bomkey</strong>
+                <span class="gr-review-card__stars">★★★★★</span>
+            </div>
+            <span class="gr-review-card__date">Vor 1 Monat</span>
+            <p class="gr-darker">Sehr guter Ansprechpartner für Sumo Felgen, Motomaster etc. und Einzelabnahmen. Kann ich mit besten Gewissen weiterempfehlen...</p>
+            <span class="gr-review-card__source">Google Rezension</span>
+        </article>
+
+        <article class="gr-review-card">
+            <div class="gr-review-card__top">
+                <strong class="gr-darker">Tms Wgr</strong>
+                <span class="gr-review-card__stars">★★★★★</span>
+            </div>
+            <span class="gr-review-card__date">Vor 6 Monaten</span>
+            <p class="gr-darker">Ich habe meine Honda CB 650 F dort zur Inspektion gebracht. Es hat alles hervorragend und schnell geklappt. Das Team vor Ort ist sehr freundlich und kommuniziert äußerst transparent...</p>
+            <span class="gr-review-card__source">Google Rezension</span>
+        </article>
     </div>
 
     <div class="gr-reviews__footer">
         <span class="gr-reviews__google">Google</span>
-        <a id="gr-all-reviews" href="#" target="_blank" rel="noopener noreferrer">
+        <a id="gr-all-reviews" href="https://www.google.com/search?sca_esv=7557dfd8ceefde67&sxsrf=AKL5yDgu4WoLEKMVONrmpQqc2P2Gva-GYQ:1794258196376&uds=AE2AFgbf06ZzDvczg9XBG5Z3qflXN7FS5t_Lvxl1tLm9M2UfUGuie9DiQWyKTgD59f_f9hytLGhYAv-ru99154ZKuJ0wpP-HxmJtVJS-T9LOXR6KC4MdkKOWZmmIxM7MFgv7XPsN3n1OQdvd_2KK_Dxzmu-UEQ1opcqRsc1PEWNQIkVuBrxD3KY&q=Motorradtechnik+Mosel+Rezensionen&si=AE1YtOqiKPb2pdLXAi8quZ9vbH4aVq_aX8-3H9iFBLpRNK95c3NIGHDlI62Pn8gHxGVZHlf4A7utUzlPjbuHIiwSVzT2JzE00HXM4K1PWA27TtEkFqqJhGGYD1JQffVqzSOFjDg2WvSx83KTvxz0VHWlArWlD5n_wQ%3D%3D&hl=de-DE&sa=X&ved=2ahUKEwj9nrjT5PuXAxXsVaQEHUwGFcoQ_4MLegQIOxAO&biw=1536&bih=703&dpr=1.25" target="_blank" rel="noopener noreferrer">
             Alle Bewertungen ansehen
         </a>
     </div>

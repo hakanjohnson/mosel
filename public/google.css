@@ -1,8 +1,9 @@
 .gr-reviews {
   --gr-accent: #ce0000;
-  --gr-text: #dbdbdb;
+  --gr-text: #eeeeee;
   --gr-muted: #777;
   --gr-gap: 18px;
+  --gr-darker: #444;
 
   width: 100%;
   color: var(--gr-text);
@@ -12,6 +13,10 @@
 .gr-reviews *::before,
 .gr-reviews *::after {
   box-sizing: border-box;
+}
+
+.gr-darker {
+  color: var(--gr-darker);
 }
 
 .gr-reviews__header {
