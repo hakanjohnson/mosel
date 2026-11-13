@@ -78,10 +78,6 @@ textarea {
   background: linear-gradient(45deg, #b90505, #ce0000);
 }
 
-.betaimg {
-  max-width: 50%;
-}
-
 .imgbox > img {
   width: 100%;
   object-fit: cover;
